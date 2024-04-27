@@ -4,7 +4,7 @@ function update() {
     let tipPercent = document.getElementById('tipInput').value
     let split = Number(document.getElementById('splitInput').value)
     
-    document.getElementById('tipPercent').innerHTML = tipPercent
+    document.getElementById('tipPercent').innerHTML = tipPercent + '%'
 
     let tip = bill / 100 * tipPercent
     document.getElementById('tipValue').innerHTML = tip.toFixed(2)
